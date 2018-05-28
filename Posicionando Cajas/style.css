@@ -1,0 +1,43 @@
+#redBox {
+	display: block;
+	height: 300px;
+	width: 300px;
+	background-color: red;
+}
+#purpleBox {
+	position: relative;
+	top: 25%;
+	display: block;
+	height: 50%;
+	width: 50%;
+	background-color: purple;
+}
+#yellowBox {
+	display: block;
+	height: 50%;
+	width: 50%;
+	float: left;
+	display: block;
+	background-color: yellow;
+}
+#blueBox {
+	display: block;
+	height: 300px;
+	width: 300px;
+	background-color: blue;	
+}
+#blackBox {
+	display: block;
+	float: left;
+	height: 25%;
+	width: 25%;
+	background-color: black;
+}
+#greenBox {
+	position: relative;
+	top: 25%;
+	display: block;
+	height: 50%;
+	width: 50%;
+	background-color: green;
+}
