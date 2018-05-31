@@ -50,4 +50,3 @@ console.assert(uno.sumar(dos).num == tres.num);
 console.assert(tres.restar(dos).num == uno.num);
 console.assert(uno.multiplicacion(dos).num == dos.num);
 console.assert(tres.multiplicacion(cero).num == cero.num);
-console.assert(tres.sumar(uno).num == num.sumar(tres).num);
