@@ -118,19 +118,24 @@ const onlyProtagonist = tvSeries.map(
 );
 console.log("Protagonistas de Series > " +JSON.stringify(onlyProtagonist));
 
-const fourStarRating = tvSeries.filter(
-    (series) => {
-        return series.rating >= 4;
-    }
-);
-console.log("Series con rating de 4/10 o más > " +JSON.stringify(fourStarRating));
-
 const seriesTitles = tvSeries.reduce(
-    (acumulador, serie)=> {
-        if(typeof(acumulador) != "string") {
-            acumulador = acumulador.name;
+    (acc, serie)=> {
+        if(typeof(acc) != "string") {
+            acc = acc.name;
         }
-        return acumulador + ", " + serie.name;
+        return acc + ", " + serie.name;
     }
 );
 console.log("Nombres de series > " +seriesTitles);
+
+const fourStarRating = tvSeries.filter(score => score.rating > 4);
+const onlyNameRatingFour = fourStarRating.reduce(
+    (acc, serie) => {
+        if(typeof(acc) != "string") {
+            acc = acc.name;
+        }
+        return acc + ", " + serie.name; 
+    }
+)
+console.log("Series de puntaje de más de 4/10 estrellas > " +JSON.stringify(onlyNameRatingFour));
+// filters series than have a rating better than 4 stars, and then reduce it to only call its name
