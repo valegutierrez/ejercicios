@@ -1,0 +1,11 @@
+@media screen and (min-width:400px){
+    #smallKittenBox {
+        display: block;
+    }
+    #mediumKittenBox {
+        display: none;
+    }
+    #bigKittenBox {
+        display: none;
+    }
+}
