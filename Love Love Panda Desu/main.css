@@ -1,0 +1,39 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 161, 126);
+    font-size: 1em;
+}
+#titlePage {
+    background-color: rgb(255, 161, 126);
+    position: fixed;
+    padding: 40px;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: right;
+}
+#panda {
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+#aboutPanda {
+    background-color: palegreen;
+    border-top: 10px solid rgb(255, 161, 126);
+    border-bottom: 10px solid rgb(255, 161, 126);
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60%;
+    padding: 40px;
+}
+#pandaInfo {
+    background-color: rgb(255, 161, 126);
+    padding: 30px;
+}
