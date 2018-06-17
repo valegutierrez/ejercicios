@@ -37,3 +37,13 @@ html {
     background-color: rgb(255, 161, 126);
     padding: 30px;
 }
+#panda2 {
+    width: 100%;
+    position: absolute;
+    top: 160%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
